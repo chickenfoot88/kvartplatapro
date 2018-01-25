@@ -1,2 +1,33 @@
-section
-  | menu
+section.top-line
+  .container
+    .row
+      .col-sm-5.hidden-md.hidden-lg
+        a(href="my-menu")#mmenu-button.hamburger.hamburger--slider.pull-left
+          span.hamburger-box
+            span.hamburger-inner
+      .col-md-2.col-sm-3
+        a(href="tel:8(432)2164040").top-line-phone.hidden-xs
+          i.fa.fa-phone
+          span 8 (432) 216 40 40
+      .col-md-3.col-sm-4
+        a(href="mailto:info@kvartplata.pro").top-line-email.hidden-xs
+          i.fa.fa-envelope
+          span info@kvartplata.pro
+      .col-md-7.hidden-sm.hidden-xs
+        include mmenu.pug
+        nav
+          ul#menu.menu
+            li 
+              a(href="#home") 
+                i.fa.fa-home
+            li 
+              a(href="#solutions") решения
+            li 
+              a(href="#integration") интеграция
+            li 
+              a(href="#advantages") преимущества
+            li 
+              a(href="#rates") тарифы
+            li 
+              a(href="#contacts") контакты
+      

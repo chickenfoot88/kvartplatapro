@@ -1,0 +1,157 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+  .top-line
+    ul
+      li
+        font-size: 0.9em
+        padding: 0 5px
+  .contacts
+    padding-bottom: 100px
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+  header
+    p
+      padding-top: 0
+      line-height: 1.5em
+    img
+      width: 80%
+      float: right
+
+  section
+    h2
+      &::after
+        width: 100%
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+  .top-line
+    border-bottom: 1px solid #f1f1f1
+  h2
+    font-size: 2em
+  .top-line
+    padding: 15px 0
+  header
+    min-height: 100%
+    p
+      line-height: 1.5em
+      font-size: 0.8em
+  section
+    padding: 50px 0
+    h2
+      margin-bottom: 40px
+    h4
+      font-size: 1.3em
+
+  .integration
+    &-item
+      padding-bottom: 5px
+      margin-bottom: 0
+      h4
+        margin-bottom: 10px
+
+  .advantages
+    h4
+      margin-bottom: 15px
+
+  .mobile
+    img
+      width: 80%
+
+  .contacts
+    .email,
+    .phone
+      padding-top: 20px
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+  h1
+    font-size: 2em
+  header
+    h4
+      font-size: 0.7em
+    h2
+      font-size: 1.4em
+  section
+    h2
+      margin-bottom: 20px
+      font-size: 1.7em
+      &::after
+        height: 3px
+        width: 100%
+    h4
+      font-size: 1.2em
+      line-height: 1.5em
+  .solutions-item
+    img
+      margin: 15px
+  .integration
+    h3
+      font-size: 1.1em
+
+  .rates
+    &-item
+      &-type,
+      &-price
+        padding: 10px
+
+    h3
+      font-size: 1.4em
+
+  .mobile
+    img
+      width: 60%
+      margin-bottom: 40px
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+  header
+    h1
+      font-size: 1.4em
+    p
+      font-size: 0.7em
+  section
+    h4
+      font-size: 1em
+  .rates
+    &-item
+      // margin-left: 20px
+      // margin-right: 20px
+    h3
+      font-size: 1em
+
+  .mobile
+    h2
+      font-size: 1.4em
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/

@@ -1,0 +1,34 @@
+section.contacts#contacts
+  .container
+    .row
+      .col-md-12
+        h2 Контакты
+        p Для получения дополнительной информации и консультации напишите нам.
+        .col-md-4.col-md-push-8
+          .row
+            .col-md-12.col-sm-6
+              .email
+                i.fa.fa-envelope
+                a(href="mailto:info@kvartplata.pro") info@kvartplata.pro
+            .col-md-12.col-sm-6
+              .phone
+                i.fa.fa-phone
+                a(href="tel:8(432)2164040") 8 (432) 216 40 40
+        .col-md-7.col-md-pull-4
+          form.callback#contact-form
+            .success
+              span Ваше письмо успешно отправлено!
+            <!-- Hidden Required Fields -->
+            input(type="hidden", name="project_name", value="Квартплата")
+            input(type="hidden", name="admin_email", value="info@kvartplata.pro")
+            input(type="hidden", name="form_subject", value="Письмо с сайта Квартплата")
+            <!-- END Hidden Required Fields -->
+            div.form-group.has-feedback
+              input#name.form-control(type='text', placeholder='Ваше имя' name='Имя', autocomplete='name' minLength="2" required)
+            div.form-group.has-feedback
+              input#email.form-control(type='email', placeholder='Ваш email' name='Email', autocomplete='email' required)
+            div.form-group.has-feedback
+              textarea#message.form-control(placeholder='Ваше сообщение' name='Сообщение')
+            div.help-block.with-errors
+            div.form-group
+              button.btn.pull-right(type='submit').contact-form-send Отправить

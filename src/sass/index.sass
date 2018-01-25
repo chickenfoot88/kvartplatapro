@@ -1,0 +1,323 @@
+// $fa-font-path: "/fontawesome/fonts/"
+@import url("./../fontawesome/css/font-awesome.min")
+@import "../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss"
+@import "../../node_modules/jquery.mmenu/dist/jquery.mmenu.all.css"
+@import './_vars.sass'
+@import './_fonts.sass'
+@import './_mixins.sass'
+
+.preloader
+  background-image: url('../images/preloader.gif')
+
+html,
+body
+  height: 100%
+  min-height: 100%
+
+body
+  font-family: $default-font
+  color: $text_main
+  line-height: 1.75
+  min-width: 320px
+  font-size: 16px
+
+ul
+  margin: 0
+  padding: 0
+  list-style: none
+
+a
+  color: $text_main
+  text-decoration: none
+  &:hover,
+  &:focus,
+  &:active
+    text-decoration: none
+
+h1, h2
+  font-family: Intro, sans-serif
+  text-transform: uppercase
+
+h1
+  font-size: 60px
+h2
+  font-size: 36px
+h3, h4
+  font-size: 24px
+
+h1, h2, h3, h4
+  span
+    color: $accent-yellow
+
+.top-line.stickytop
+  padding: 12px 0
+  border-bottom: 1px solid #a7a7a7
+
+section
+  padding: 100px 0
+  h2
+    margin-bottom: 80px
+    position: relative
+    display: inline-block
+    &:after
+      content: ''
+      position: absolute
+      height: 4px
+      background-color: $accent-green
+      width: 120%
+      left: 2px
+      bottom: -5px
+
+.top-line
+  background: #fff
+  padding: 30px 0
+  line-height: 1.2em
+  width: 100%
+  z-index: 100
+  position: fixed
+  top: 0
+  +transition(padding, 0.2s)
+  &-phone,
+  &-email
+    font-size: 1em
+    display: block
+    span
+      display: inline-block
+      padding-top: 3px
+  .fa
+    color: $text_lighter
+    margin-right: 10px
+    font-size: 1.3em
+    +transition(color, 0.25s)
+    float: left
+  ul
+    .fa
+      margin-right: 0
+      float: none
+    li
+      font-size: 1em
+      display: inline-block
+      padding: 0 10px
+      a
+        text-transform: uppercase
+        +transition(color, 0.25s)
+      &:hover
+        a, .fa
+          color: $accent-yellow
+
+  .hamburger
+    margin: 0
+    padding: 0
+    margin-right: 30px
+    .hamburger-inner,
+    .hamburger-inner::after,
+    .hamburger-inner::before
+      background-color: $accent-orange
+
+header
+  background: linear-gradient(-45deg, #66cc99 0%, #339999 100%)
+  padding: 100px 0
+  color: #fff
+  font-size: 22px
+  min-height: 100vh
+  img
+    width: 100%
+  p
+    padding-top: 90px
+  h1
+    text-align: center
+    margin:
+  h4
+    text-align: center
+    margin-bottom: 90px
+
+.solutions
+  &-item
+    margin-bottom: 40px
+    img
+      width: 70px
+      float: left
+      margin: 20px 45px
+    h4
+      margin-bottom: 20px
+      font-weight: 700
+    p
+      display: table-cell
+      height: 100px
+      padding: 0
+      margin: 0
+      vertical-align: middle
+      font-family: RalewayLight, sans-serif
+
+.integration
+  background: url('../images/integration_bg.png') no-repeat
+  background-size: cover
+  color: #fff
+  &-item
+    padding: 20px
+    margin-bottom: 10px
+    h4
+      margin-bottom: 25px
+      font-weight: 500
+      font-family: RalewayMedium, sans-serif
+      line-height: 1.5em
+    ul
+      margin-left: 30px
+      li
+        .fa
+          margin-right: 8px
+
+.advantages
+  &-item
+    margin: 20px 0 40px
+    &-img
+      img
+        width: 100%
+        max-width: 50px
+    h4
+      margin: 0
+      margin-bottom: 35px
+
+.rates
+  background: url('../images/rates_bg.png')
+  h3
+    margin-bottom: 40px
+    margin-left: 20px
+  &-item
+    border: 1px solid #e4e4e4
+    border-radius: 3px
+    background: #fff
+    text-align: center
+    margin-bottom: 50px
+    &-type
+      padding: 20px
+      font-family: Roboto, sans-serif
+      color: lighten($text_lighter, 30%)
+      line-height: 1.5em
+      span
+        font-size: 1.6em
+        color: $accent-orange
+        font-weight: 500
+    &-price
+      padding: 20px
+      background-color: #f3f3f3
+      span
+        font-size: 1.8em
+        font-weight: 500
+
+.mobile
+  background: #f6f6f6
+  p
+    margin-bottom: 80px
+  &-images
+    text-align: center
+
+.contacts
+  padding-bottom: 300px
+  form
+    padding-top: 30px
+    .form-control
+      border-radius: 0
+      box-shadow: none
+      font-size: 0.9em
+    .form-control
+      &:focus
+        border-color: $accent-orange
+      &::placeholder
+        color: lighten($text_lighter, 10%)
+    textarea
+      resize: vertical
+      height: 200px
+    .btn
+      color: darken($accent-green, 20%)
+      border-color: $accent-green
+      padding: 10px 20px
+      border-radius: 0
+      background-color: #fff
+      font-size: 1em
+      font-weight: 500
+      transition: all 0.3s ease
+      &:hover,
+      &:focus
+        background-color: $accent-green
+        color: #fff
+        outline: none
+      &:active
+        box-shadow: none
+        background-color: darken($accent-green, 20%)
+
+  .callback
+    position: relative
+
+  .success
+    bottom: 0
+    display: none
+    left: 0
+    position: absolute
+    right: 0
+    text-transform: uppercase
+    top: 30px
+    font-weight: bold
+    background-color: #fff
+    width: 100%
+    height: 360px
+    text-align: center
+    z-index: 10
+    padding-top: 162px
+    border: 2px solid $accent-green
+    span
+      color: $accent-green
+      width: 100%
+      text-align: center
+    & ~ *
+      transition: all .5s ease
+    &.active
+      & ~ *
+        opacity: .5
+        filter: blur(10px)
+
+
+  .email,
+  .phone
+    padding-top: 60px
+    .fa
+      color: $accent-green
+      border: 2px solid $accent-green
+      border-radius: 40px
+      padding: 15px
+      font-size: 1.5em
+      margin-right: 30px
+  .phone
+    padding-top: 30px
+    .fa
+      padding: 15px 18px
+
+  .has-error .form-control
+    border-color: $accent-red
+
+  .has-success .form-control
+    border-color: $accent-green
+
+  input
+    -webkit-box-shadow: inset 0 0 0 50px #fff
+    -webkit-text-fill-color: #555
+
+  .form-control:focus
+    border-color: none
+    box-shadow: none
+
+  .has-error
+    .form-control:focus
+    box-shadow: none
+
+
+.footer
+  margin: 0
+  padding: 0
+  p
+    font-size: 0.7em
+    color: #a7a7a7
+    a
+      color: #a7a7a7
+
+@import './media.sass'
