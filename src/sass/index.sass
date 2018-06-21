@@ -1,7 +1,8 @@
 // $fa-font-path: "/fontawesome/fonts/"
-@import url("./../fontawesome/css/font-awesome.min")
+@import url("./../fontawesome/css/font-awesome.min.css")
 @import "../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss"
 @import "../../node_modules/jquery.mmenu/dist/jquery.mmenu.all.css"
+@import "../../node_modules/lightbox2/dist/css/lightbox.min.css"
 @import './_vars.sass'
 @import './_fonts.sass'
 @import './_mixins.sass'
@@ -178,6 +179,20 @@ header
       margin: 0
       margin-bottom: 35px
 
+.web-site
+  img
+    width: 100%
+    margin-top: 20px
+    border: 1px solid $accent-yellow
+
+.portal
+  background-color: lighten($accent-green, 20%)
+  .h2::after
+    background-color: #fff
+  img
+    width: 100%
+    border: 1px solid $accent-yellow
+
 .rates
   background: url('../images/rates_bg.png')
   h3
@@ -227,7 +242,7 @@ header
         color: lighten($text_lighter, 10%)
     textarea
       resize: vertical
-      height: 200px
+      min-height: 200px
     .btn
       color: darken($accent-green, 20%)
       border-color: $accent-green

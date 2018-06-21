@@ -7,6 +7,7 @@ const globAll = require('glob-all');
 const PurifyCSSPlugin = require('purifycss-webpack');
 
 
+
 const isProd = process.argv.indexOf('-p') !== -1;
 
 const cssDev = [
@@ -89,7 +90,6 @@ module.exports = {
 	devServer: {
 		contentBase: path.join(__dirname, "dist"),
 		compress: true,
-		host: '192.168.1.107',
 		stats: 'errors-only',
 		open: false,
 		hot: false
@@ -122,6 +122,7 @@ module.exports = {
 				path.join(__dirname, 'src/index.js'),
 				path.join(__dirname, './node_modules/jquery.mmenu/dist/jquery.mmenu.all.css'),
 				path.join(__dirname, './node_modules/bootstrap-validator/dist/validator.min.js'),
+				path.join(__dirname, './node_modules/lightbox2/dist/css/lightbox.min.css'),
 			]),
 			purifyOptions: {
 				minify: true
